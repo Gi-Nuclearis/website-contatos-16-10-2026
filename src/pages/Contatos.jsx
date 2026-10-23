@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../api/api";
+import "../style/site.css"
 
 export default function Contatos() {
 
@@ -48,9 +49,9 @@ export default function Contatos() {
             </form>
             <ul>
                 {contatos.map((c) => (
-                    <li key={c._id}>
+                    <div key={c._id}>
                         {c.nome} - {c.email}
-                    </li>
+                    </div>
                 ))}
             </ul>
         </div>
